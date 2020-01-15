@@ -63,7 +63,9 @@
             </ul>
           </aside>
         </div>
-        <%= paginate(@products) %>
+        <% if @products %>
+          <%= paginate(@products) %>
+        <% end %>
       </div>
     </div>
   </div>
